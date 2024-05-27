@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 @ResponseStatus(HttpStatus.BAD_REQUEST)
 public class ZeroDivideError extends IllegalArgumentException {
     public ZeroDivideError(String s) {
-        super();
+        super(s);
     }
 }
+//\ No newline at end of file

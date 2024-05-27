@@ -22,4 +22,8 @@ public class ServiceCalculator implements InterfaceCalculator {
         }
         return (float) num1/num2;
     }
+    public String hello(){
+        return "Добро пожаловать в калькулятор!";
+    }
 }
+//\ No newline at end of file

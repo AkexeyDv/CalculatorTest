@@ -51,7 +51,7 @@ class ServiceCalculatorTest {
     @MethodSource("createValueForReturnCalculate")
     @ParameterizedTest
     public void returnCalculateMultiply(int num1, int num2) {
-        Assertions.assertEquals((long) num1 - num2, out.multiply(num1, num2));
+        Assertions.assertEquals((long) num1 * num2, out.multiply(num1, num2));
     }
 
     @MethodSource("createValueForReturnCalculate")
@@ -65,4 +65,9 @@ class ServiceCalculatorTest {
         Assertions.assertThrows(ZeroDivideError.class,()->out.divide(5,0));
 
     }
+    @Test
+    public void hello(){
+        Assertions.assertEquals("Добро пожаловать в калькулятор!",out.hello());
+    }
 }
+//\ No newline at end of file
