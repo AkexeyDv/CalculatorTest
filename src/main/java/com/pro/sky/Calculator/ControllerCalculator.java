@@ -15,7 +15,7 @@ public class ControllerCalculator {
     }
     @GetMapping
     public String hello(){
-        return "Hello";
+        return calculator.hello();
     }
     @GetMapping(path = "/plus")
     public String plus(@RequestParam("num1") int num1,@RequestParam("num2") int num2){
@@ -35,3 +35,4 @@ public class ControllerCalculator {
     }
 
 }
+//\ No newline at end of file
